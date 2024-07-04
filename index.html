@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelis 78</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/estilo.css">
+
+    <!-- iconos -->
+    <link rel="apple-touch-icon" sizes="57x57" href="iconos/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="iconos/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="iconos/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="iconos/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="iconos/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="iconos/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="iconos/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="iconos/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="iconos/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="iconos/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="iconos/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- iconos -->
+
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid"> 
+            <a class="navbar-brand d-flex align-items-center " href="#">
+                <img src="/imagenes/logo.png" alt="Logo">
+                <h1 class="display-6 fw-normal text-secondary-emphasis">Pelis 78</h1>
+            </a>
+        </div>
+
+    </nav>
+
+    <main>
+        <section>
+            <h2 class="text-center mt-5 display-5 fw-semibold mb-4">Pelis 78: una aplicación para cinéfilos</h2>
+            <div class="container">
+                <div class="contenedorParrafoEIcono mb-5">
+                    <div class="contenedorParrafo">
+                        <p class="fs-5">A todos nos ha pasado de querer recomendar una película pero no recordar ninguna. Bueno, no te preocupes que de ese problema nos encargamos nosotros!</p>
+                        <p class="fs-5">Con <strong>Pelis 78</strong> los amantes de las películas pueden tener lista organizada de sus películas favoritas para tener a mano cuando alguien nos pide una recomendación o por si uno quiere recordar y rever alguna película que nos haya gustado. </p> 
+                        <p class="fs-5"> Esperamos que nuestra aplicación te sea de mucha utilidad. <strong>Grcias por elegirnos!</strong></p>
+                    </div>
+                    <figure class="contenedorIcono">
+                        <img src="imagenes/icono.png" alt="icono de pagina web" class="w-50">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedorBusqueda">
+            <article class="contenedorTituloYBuscador">
+                <p class="fs-1">¡Busca tu película favorita!</p>
+                <div class="contenedorBusquedaYBoton">
+                    <div class="contenedorInputBusqueda">
+                        <input class="form-control" id="peliculaBuscada" type="search" placeholder="Buscar pelicula">
+                    </div>
+                    <div class="contenedorBtnBusqueda">
+                        <button class="btn btn-outline-secondary" id="botonBuscar" type="submit">Buscar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="contenedorPeliculaEncontrada">
+                <div class="contenedorDetallesPeliculaEncontrada" id="contenedorResultados">
+                    <!-- <h2 class="display-6 fw-semibold">Titulo de película</h2>
+                    <figure class="contenedorPortadaPeliculaBuscada">
+                        <img src="imagenes/portadaDePrueba.jpg">
+                    </figure>        
+                    <h3 class="h3 fw-normal">Autor</h3>
+                    <p class="fs-6 mb-1">Género</h3>
+                    <p class="fs-6">Fecha de lanzamiento</p>
+                    <button class="btn btn-outline-success">Agregar a favoritos</button>  -->
+                </div>
+            </article>   
+        </section>
+        
+        <section class="container" id="contenedorFavoritos">
+            <h2 class="tituloFavoritos">Tus películas favoritas</h2>
+            <article id="articuloContenedorFavoritos">
+                <div class="favoritos">
+                    <!-- acá aparece el listado de películas favoritas -->
+                </div>
+            </article>
+        </section>
+
+        <!-- Aviso de que estás en modo offline -->
+        <aside>
+            <div id="offline" style="display: none;">
+                <p>Estás en modo offline</p>
+            </div>
+        </aside>
+    </main>
+    <footer class="bg-secondary">
+        <p class="text-center text-light m-0">2024-DMW3AP-PARCIAL 2 Aplicaciones Web Progresivas</p>
+    </footer>
+</body>
+</html>
